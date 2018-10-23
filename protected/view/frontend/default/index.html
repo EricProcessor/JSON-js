@@ -37,9 +37,9 @@
       </div>
       <!-- 头部搜索结束 -->
       <!-- 头部购物车开始 -->
-      <div class="top-cart fr">
+      <!-- <div class="top-cart fr">
         <div class="radius4 mt10"><i class="icon"></i><a href="<{url c='cart' a='index'}>" id="cartbar"><font>我的购物车</font>(<b>0</b>)</a></div>
-      </div>
+      </div> -->
       <!-- 头部购物车结束 -->
     </div>
     <!-- 头部主体结束 -->
@@ -70,25 +70,9 @@
     <div class="catebar w210 fl"><{layout_catebar}></div>
     <!-- 商品分类结束 -->
     <!-- 轮播图片广告开始 -->
-    <div class="w640 fl cut"><{layout_adv id='1'}></div>
+    <!-- <div class="w640 fl cut"><{layout_adv id='1'}></div> -->
     <!-- 轮播图片广告结束 -->
-    <!-- 资讯开始 -->
-    <div class="w240 fr cut">
-      <div class="news mt10">
-        <h2><a href="<{url c='article' a='index'}>" class="fr">更多 <i>&gt;</i></a>最新资讯</h2>
-        <{if !empty($latest_article)}>
-        <ul>
-          <{foreach $latest_article as $v}>
-          <li><a title="<{$v.title}>" href="<{url c='article' a='view' id=$v.id}>"><b>[<{$v.cate_name}>]</b><{$v.title}></a></li>
-          <{/foreach}>
-        </ul>
-        <{/if}>
-      </div>
-      <!-- 广告位(240x70)开始 -->
-      <div class="module mt10"><{layout_adv id='2'}></div>
-      <!-- 广告位(240x70)结束 -->
-    </div>
-    <!-- 资讯结束 -->
+
   </div>
   <!-- 新品上市开始 -->
   <div class="module mt30 cut">
