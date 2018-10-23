@@ -27,12 +27,12 @@
         <form method="get" action="<{url c='search' a='index'}>">
           <{if $GLOBALS['cfg']['rewrite_enable'] == 0}><input type="hidden" name="c" value="search" /><input type="hidden" name="a" value="index" /><{/if}>
           <div class="sf cut">
-            <input class="fl" name="kw" type="text" value="<{if isset($u.kw)}><{$u.kw}><{/if}>" placeholder="双11提前购，畅想全年最低价" />
-            <button class="fr" type="submit">搜 索</button>
+            <input class="fl" name="kw" type="text" value="<{if isset($u.kw)}><{$u.kw}><{/if}>" placeholder="Search in this store" />
+            <button class="fr" type="submit">Search</button>
           </div>
         </form>
         <{if !empty($hot_searches)}>
-        <div class="hw mt8">热门搜索：<{foreach $hot_searches as $v}><a href="<{url c='search' a='index' kw=$v}>"><{$v}></a><{/foreach}></div>
+        <div class="hw mt8">Hot Search：<{foreach $hot_searches as $v}><a href="<{url c='search' a='index' kw=$v}>"><{$v}></a><{/foreach}></div>
         <{/if}>
       </div>
       <!-- 头部搜索结束 -->
@@ -50,6 +50,7 @@
         <div class="cross cut">
           <ul>
             <li><a href="<{$common.baseurl}>">首页</a></li>
+            <li><a href="#">公司简介</a></li>
             <{if !empty($nav.main)}>
             <{foreach $nav.main as $v}>
             <li><a href="<{$v.link}>"<{$v.target}>><{$v.name}></a></li>
