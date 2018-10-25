@@ -53,8 +53,8 @@ function addFavorite(goods_id){
   <div class="absmu latent" id="topMenu">
     <a href="<{url c='mobile/main' a='index'}>"><i class="home iconfont">&#xe606;</i><span>首页</span></a>
     <a href="<{url c='mobile/category' a='index'}>"><i class="home iconfont">&#xe60b;</i><span>商品分类</span></a>
-    <a href="<{url c='mobile/cart' a='index'}>"><i class="home iconfont">&#xe603;</i><span>购物车</span></a>
-    <a href="<{url c='mobile/user' a='index'}>"><i class="home iconfont">&#xe632;</i><span>我的</span></a>
+    <!-- <a href="<{url c='mobile/cart' a='index'}>"><i class="home iconfont">&#xe603;</i><span>购物车</span></a>
+    <a href="<{url c='mobile/user' a='index'}>"><i class="home iconfont">&#xe632;</i><span>我的</span></a> -->
   </div>
   <!-- goods imgs start -->
   <div class="gims" id="gims">
@@ -91,7 +91,7 @@ function addFavorite(goods_id){
     </dl>
     <{/foreach}>
     <{/if}>
-    <dl class="qty">
+    <!-- <dl class="qty">
       <dt>数量：</dt>
       <dd>
         <a class="minus" onclick="changeBuyQty('decr')">-</a><input id="buy-qty" type="text" readonly value="1" data-stock='<{$goods.stock_qty}>' /><a class="plus" onclick="changeBuyQty('incr')">+</a>
@@ -99,7 +99,7 @@ function addFavorite(goods_id){
         <span class="stock">剩余<b class="pink"><{$goods.stock_qty}></b>件</span>
         <{/if}>
       </dd>
-    </dl>
+    </dl> -->
   </div>
   <div class="gdata mt10 cut">
     <a href="<{url c='mobile/goods' a='illustrated' id=$goods.goods_id}>">
@@ -111,11 +111,11 @@ function addFavorite(goods_id){
       <span class="fl"><font class="f14">规格参数</font></span>
       <i class="fr iconfont">&#xe614;</i>
     </a>
-    <a href="<{url c='mobile/goods' a='reviews' id=$goods.goods_id}>">
+    <!-- <a href="<{url c='mobile/goods' a='reviews' id=$goods.goods_id}>">
       <span class="fl"><font class="f14">商品评价</font><font class="total ml5">(<{$review_rating.total}>)</font></span>
       <i class="fr iconfont">&#xe614;</i>
       <{if $review_rating.total > 0}><span class="hint fr">满意度<{$review_rating.satis}>%</span><{/if}>
-    </a>
+    </a> -->
   </div>
   <{if !empty($related)}>
   <div class="lateral mt10">
@@ -162,10 +162,10 @@ function addFavorite(goods_id){
   <{/if}>
 </div>
 <div class="footact" id="footfixed">
-  <div class="iact fl cut">
+  <!-- <div class="iact fl cut">
     <a href="javascript:void(0)" onclick="addFavorite('<{$goods.goods_id}>')"><i class="iconfont">&#xe605;</i><span>收藏</span></a>
     <a id="cartbar" href="<{url c='mobile/cart' a='index'}>"><i class="iconfont">&#xe603;</i><span>购物车</span><em class="hide">0</em></a>
-  </div>
+  </div> -->
   <div class="bact cut"><a class="add" id="addcartbtn" onclick="addToCart('<{$goods.goods_id}>')">加入购物车</a><a class="buy" onclick="toBuy('<{$goods.goods_id}>', '<{url c='mobile/cart' a='index'}>')">立即购买</a></div>
 </div>
 <{include file='mobile/default/lib/footer.html'}>

@@ -98,7 +98,7 @@
 .grevli .nomore {padding:8px 0;color:#bbb;background:#f9f9f9;}
 /* footact */
 .footact div.iact {width:38%;height:50px;}
-.footact div.bact {width:62%;height:50px;margin-left:38%;}
+.footact div.bact {width:100%;height:50px;}
 .footact div a {display:block;float:left;width:50%;text-align:center;}
 .footact div.iact a {position:relative;height:40px;padding:5px 0 0 0;border-top:1px solid #e5e5e5;}
 .footact div.iact a i {display:block;font-size:22px;line-height:22px;color:#909092;}
