@@ -14,29 +14,29 @@ return array
             '商品评价' => 'c=goods_review&a=index'
         ),
 
-        '订单管理' => array
-        (
-            '订单列表' => 'c=order&a=index',
-            '发货列表' => 'c=order_shipping&a=index',
-            '订单日志' => 'c=order_log&a=index',
-        ),
+        // '订单管理' => array
+        // (
+        //     '订单列表' => 'c=order&a=index',
+        //     '发货列表' => 'c=order_shipping&a=index',
+        //     '订单日志' => 'c=order_log&a=index',
+        // ),
 
-        '用户管理' => array
-        (
-            '用户列表' => 'c=user&a=index',
-            '用户组' => 'c=user_group&a=index',
-            '账户日志' => 'c=user_account_log&a=index',
-        ),
+        // '用户管理' => array
+        // (
+        //     '用户列表' => 'c=user&a=index',
+        //     '用户组' => 'c=user_group&a=index',
+        //     '账户日志' => 'c=user_account_log&a=index',
+        // ),
         
-        '运营管理' => array
-        (
-            '咨询反馈' => 'c=feedback&a=index',
-            '售后服务' => 'c=aftersales&a=index',
-            '订单统计' => 'c=stats&a=order',
-            '营收统计' => 'c=stats&a=revenue',
-            '访问统计' => 'c=stats&a=visitor',
-            '友情链接' => 'c=friendlink&a=index',
-        ),
+        // '运营管理' => array
+        // (
+        //     '咨询反馈' => 'c=feedback&a=index',
+        //     '售后服务' => 'c=aftersales&a=index',
+        //     '订单统计' => 'c=stats&a=order',
+        //     '营收统计' => 'c=stats&a=revenue',
+        //     '访问统计' => 'c=stats&a=visitor',
+        //     '友情链接' => 'c=friendlink&a=index',
+        // ),
         
         '广告管理' => array
         (
@@ -68,14 +68,14 @@ return array
             '角色列表' => 'c=role&a=index',
         ),
 
-        '系统配置' => array
-        (
-            '系统设置' => 'c=setting&a=index',
-            '导航设置' => 'c=nav&a=index',
-            '配送方式' => 'c=shipping_method&a=index',
-            '支付方式' => 'c=payment_method&a=index',
-            '物流承运商' => 'c=shipping_carrier&a=index',
-        ),
+        // '系统配置' => array
+        // (
+        //     '系统设置' => 'c=setting&a=index',
+        //     '导航设置' => 'c=nav&a=index',
+        //     '配送方式' => 'c=shipping_method&a=index',
+        //     '支付方式' => 'c=payment_method&a=index',
+        //     '物流承运商' => 'c=shipping_carrier&a=index',
+        // ),
         
         '系统应用' => array
         (
