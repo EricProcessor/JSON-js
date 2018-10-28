@@ -107,7 +107,7 @@ function reviewPageJump(e){showReviewList($(e).prev('input').val())}
         </div>
       </div>
       <!-- 商品图片结束 -->
-      <div class="social mt20"><a onclick="addFavorite(<{$goods.goods_id}>)"><i class="favor icon"></i><font>收藏</font></a></div>
+      <!-- <div class="social mt20"><a onclick="addFavorite(<{$goods.goods_id}>)"><i class="favor icon"></i><font>收藏</font></a></div> -->
     </div>
     <div class="gtbox cut">
       <h1><{$goods.goods_name}></h1>
@@ -145,13 +145,13 @@ function reviewPageJump(e){showReviewList($(e).prev('input').val())}
         <{/foreach}>
         <{/if}>
         <form method="post" action="<{url c='cart' a='index'}>" id="buy-form">
-        <dl class="mt15">
+        <!-- <dl class="mt15">
           <dt>购买数量:</dt>
           <dd class="qty" id="buy-qty">
             <button type="button">-</button><input name="qty" class="aln-c" type="text" value="1" data-stock="<{$goods.stock_qty}>" /><button type="button">+</button>
             <font class="c999 ml5">件</font>
           </dd>
-        </dl>
+        </dl> -->
         </form>
       </div>
       <div class="buy mt30"><a class="add-cart icon" onclick="addToCart(this, '<{$goods.goods_id}>')">加入购物车</a><a class="buy-now icon" onclick="toBuy('<{$goods.goods_id}>', '<{url c='cart' a='index'}>')">立即购买</a></div>
